@@ -15,7 +15,7 @@ namespace Login
 
             char[] Data = Str.ToCharArray();
 
-            Regex login1 = new Regex("^[a-zA-Zа-яА-Я][a-zA-Zа-яА-Я0-9]{2,9}$");
+            Regex login1 = new Regex("^[a-zA-Z][a-zA-Z0-9]{2,9}$");
             if (login1.Match(Str).Success)
                 Console.WriteLine("Логин корректный");
             else
